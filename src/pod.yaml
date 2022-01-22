@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: convercao
+  labels:
+    app: front
+spec:
+  containers:
+    - name: web
+      image: flvasques/convercao-temperatura:v1
+      ports:
+      - containerPort: 80
